@@ -1,6 +1,9 @@
-@media (max-width: 800px) {
+@media (max-width: 767px) {
     nav {
-        flex-direction: column;
+        display: flex;
+        /* flex-direction: column; */
+        flex-wrap: wrap;
+        /* justify-content: space-between; */
     }
 
     .logo {
@@ -13,13 +16,17 @@
         height: 30px;
     }
 
+    nav ul li {
+        padding: 0 15px;
+    }
+
     .search {
         justify-content: center;
         width: 95vw;
     }
 
     .search input {
-        margin: 10px 15px 10px 5px;
+        margin: 10px 15px;
         width: 100%;
     }
 
@@ -75,6 +82,10 @@
 
     .search input {
         margin: 10px 15px 10px 5px;
+    }
+
+    .btn {
+        margin-right: 5px;
     }
 
     .social-icons a img {
