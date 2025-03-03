@@ -17,6 +17,10 @@
 
 .copy {
     font-size: 0.8em;
+    position: absolute;
+    right: 0;
+    top: 20px;
+    padding: 10px 0;
 }
 
 .footer-left,
@@ -27,10 +31,15 @@
     column-gap: 20px;
 }
 
+.footer-right {
+    position: relative;
+}
+
 .btn {
     border: 1px solid white;
     border-radius: 5px;
     padding: 7px 10px;
+    margin-right: 15px;
     background: var(--main-bg-color);
     color: white;
     cursor: pointer;
