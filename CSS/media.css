@@ -41,24 +41,43 @@
     .card-item {
         width: 30vw;
     }
-}
 
-@media (max-width: 920px) {
+    .footer-left {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 80%;
+    }
 
-    .footer-left,
     .footer-right {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        align-items: flex-start;
         height: 80%;
+    }
+
+    .copy {
         font-size: 0.8em;
+        position: relative;
+        right: 0;
+        top: 0;
+        padding: 10px 0;
     }
 
     .social-icons a img {
         width: 0.9em;
         height: 0.9em;
     }
+}
+
+@media (max-width: 920px) {
+    /* .copy {
+        font-size: 0.8em;
+        position: absolute;
+        right: 0;
+        top: 20px;
+        padding: 10px 0;
+    } */
 }
 
 @media (max-width: 500px) {
