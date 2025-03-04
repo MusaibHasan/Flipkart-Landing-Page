@@ -174,8 +174,8 @@ img {
 }
 
 .social-icons a img {
-    width: 18px;
-    height: 18px;
+    width: 1em;
+    height: 1em;
     display: flex;
     align-items: center;
 }
