@@ -112,8 +112,29 @@
         margin-right: 5px;
     }
 
+    .card h2 {
+        font-size: 1.1em;
+        margin-left: 1.6vh;
+    }
+
+    .my-1 {
+        font-size: 0.95em;
+    }
+
+    .my-2 {
+        font-size: 1em;
+    }
+
     .social-icons a img {
         width: 0.8em;
         height: 0.8em;
+    }
+
+    .flex-all-center {
+        font-size: 0.825em;
+    }
+
+    .copy {
+        font-size: 0.725em;
     }
 }
