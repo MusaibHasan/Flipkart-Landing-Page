@@ -6,6 +6,10 @@
         top: 20px;
         padding: 10px 0;
     }
+
+    /* .card-item {
+        width: 20rem;
+    } */
 }
 
 @media (max-width: 767px) {
@@ -44,12 +48,17 @@
         height: 25vh;
     }
 
-    .cards {
+    /* .cards {
         overflow-x: auto;
-    }
+    } */
 
     .card-item {
+        width: 35vw;
+    }
+
+    .card-item img {
         width: 30vw;
+        height: auto;
     }
 
     .footer-left,
@@ -110,6 +119,10 @@
 
     .btn {
         margin-right: 5px;
+    }
+
+    .card-item {
+        width: 40vw;
     }
 
     .card h2 {
