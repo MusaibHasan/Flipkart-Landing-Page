@@ -15,6 +15,12 @@ header {
     top: 0;
 }
 
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 nav {
     display: flex;
     align-items: center;
@@ -80,6 +86,10 @@ nav ul li a:hover {
 .btn:hover {
     background-color: rgb(0, 72, 255);
     color: white;
+}
+
+.menu {
+    display: none;
 }
 
 .F9\+fd2 {
