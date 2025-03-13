@@ -59,15 +59,20 @@
     font-size: medium;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     letter-spacing: 1px;
+    white-space: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* Optional: Adds "..." if text overflows */
 }
 
 .my-2 {
     font-weight: 500;
-}
-
-.lines {
-    white-space: nowrap;
+    white-space: normal;
     overflow: hidden;
     text-overflow: ellipsis;
     /* Optional: Adds "..." if text overflows */
+}
+
+.lines {
+    width: 10em;
 }
