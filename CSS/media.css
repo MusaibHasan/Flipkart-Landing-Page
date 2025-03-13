@@ -20,6 +20,10 @@
         /* justify-content: space-between; */
     }
 
+    .header {
+        width: 95%;
+    }
+
     .logo {
         justify-content: center;
         margin: 12px 0;
@@ -36,7 +40,7 @@
 
     .search {
         justify-content: center;
-        width: 95vw;
+        width: 98vw;
     }
 
     .search input {
@@ -97,8 +101,8 @@
     }
 
     nav ul {
-        justify-content: center;
         height: 30px;
+        display: none;
     }
 
     nav ul li a {
@@ -111,6 +115,7 @@
 
     .search {
         justify-content: center;
+        width: 95vw;
     }
 
     .search input {
@@ -119,6 +124,13 @@
 
     .btn {
         margin-right: 5px;
+    }
+
+    .menu {
+        display: block;
+        margin-right: 7px;
+        color: white;
+        font-size: 2em;
     }
 
     .slider {
