@@ -120,7 +120,7 @@ img {
 }
 
 .slider {
-    width: 98vw;
+    max-width: 98vw;
     margin: 5px auto;
     background-color: white;
     overflow: hidden;
