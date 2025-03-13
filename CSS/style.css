@@ -127,9 +127,10 @@ img {
     scrollbar-width: thin;
 }
 
-/* .slider img {
+.slider img {
     align-items: center;
-} */
+    border-radius: 10px;
+}
 
 .card {
     max-width: 98vw;
