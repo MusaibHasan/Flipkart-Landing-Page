@@ -135,11 +135,11 @@ img {
     background-color: white;
     overflow: hidden;
     scrollbar-width: thin;
+    border-radius: 10px;
 }
 
 .slider img {
     align-items: center;
-    border-radius: 10px;
 }
 
 .card {
