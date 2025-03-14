@@ -134,11 +134,11 @@
     }
 
     .slider {
-        max-width: 95vw;
+        width: 95vw;
     }
 
     .card {
-        max-width: 95vw;
+        width: 95vw;
     }
 
     .card-item {
