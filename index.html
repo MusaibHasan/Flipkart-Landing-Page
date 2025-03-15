@@ -16,6 +16,17 @@
 </head>
 
 <body>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const toggleButton = document.querySelector(".bx-menu");
+            const list = document.querySelector(".list");
+
+            toggleButton.addEventListener("click", function () {
+                list.classList.toggle("active");
+            });
+        });
+    </script>
+
     <header>
         <nav>
             <div class="header">
@@ -25,7 +36,7 @@
                         <a class="MwbhDR" href="https://www.flipkart.com/">Join <span class="s4NJ5L">Plus</span></a>
                     </div>
                 </div>
-                <ul>
+                <ul class="list">
                     <li><a href="/Flipkart-Clone/home.html">Home</a></li>
                     <li><a href="/Flipkart-Clone/about.html">About</a></li>
                     <li><a href="/Flipkart-Clone/contact.html">Contact</a></li>
