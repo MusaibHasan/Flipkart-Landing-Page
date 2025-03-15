@@ -29,12 +29,12 @@
         margin: 12px 0;
     }
 
-    nav ul {
+    .list {
         justify-content: center;
         height: 30px;
     }
 
-    nav ul li {
+    .list li {
         padding: 0 15px;
     }
 
@@ -85,8 +85,8 @@
     }
 
     .social-icons a img {
-        width: 0.9em;
-        height: 0.9em;
+        width: 1em;
+        height: 1em;
     }
 }
 
@@ -100,17 +100,37 @@
         margin: 12px 0;
     }
 
-    nav ul {
-        height: 30px;
+    .list {
         display: none;
+        flex-direction: column;
+        position: absolute;
+        right: 50px;
+        /* transform: translateX(-350px);
+        transition-duration: 0.45s; */
+        padding: 10px;
+        list-style-type: none;
     }
 
-    nav ul li a {
+    /* Show the menu when the toggle class is active */
+    .list.active {
+        display: flex;
+        background-color: blue;
+    }
+
+    .list li a {
         color: white;
     }
 
-    nav ul li a:hover {
+    .list li a:hover {
         text-decoration: underline;
+    }
+
+    .menu {
+        display: block;
+        cursor: pointer;
+        margin-right: 7px;
+        color: white;
+        font-size: 2em;
     }
 
     .search {
@@ -124,13 +144,6 @@
 
     .btn {
         margin-right: 5px;
-    }
-
-    .menu {
-        display: block;
-        margin-right: 7px;
-        color: white;
-        font-size: 2em;
     }
 
     .slider {
@@ -159,8 +172,8 @@
     }
 
     .social-icons a img {
-        width: 0.8em;
-        height: 0.8em;
+        width: 0.9em;
+        height: 0.9em;
     }
 
     .flex-all-center {
