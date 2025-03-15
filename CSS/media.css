@@ -123,6 +123,7 @@
 
     .list li a:hover {
         text-decoration: underline;
+        text-shadow: none;
     }
 
     .menu {
