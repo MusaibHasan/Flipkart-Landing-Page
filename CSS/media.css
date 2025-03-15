@@ -114,7 +114,7 @@
     /* Show the menu when the toggle class is active */
     .list.active {
         display: flex;
-        background-color: blue;
+/*         background-color: blue; */
     }
 
     .list li a {
