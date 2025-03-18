@@ -4,61 +4,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Online Shopping Site for Mobiles, Electronics, Furniture, Grocery, Lifestyle, Books & More. Best Offers!
-    </title>
-    <link rel="stylesheet" href="/Flipkart-Clone/CSS/style.css">
-    <link rel="stylesheet" href="/Flipkart-Clone/CSS/utilities.css">
-    <link rel="stylesheet" href="/Flipkart-Clone/CSS/media.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="icon"
-        href="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/logo_lite-cbb357.png"
-        type="image/png">
+    <title>Navbar</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/CSS/media.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        @media (min-width: 768px) {
+            .nav-item a {
+                color: white;
+            }
+        }
+    </style>
 </head>
 
 <body>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const toggleButton = document.querySelector(".bx-menu");
-            const list = document.querySelector(".list");
-
-            toggleButton.addEventListener("click", function () {
-                list.classList.toggle("active");
-            });
-        });
-    </script>
-
-    <header>
-        <nav>
-            <div class="header">
-                <div class="logo">
-                    <div class="F9+fd2"><a href="https://www.flipkart.com/"><img src="/Flipkart-Clone/img/flipkart-logo.png"
-                                alt=""></a>
-                        <a class="MwbhDR" href="https://www.flipkart.com/">Join <span class="s4NJ5L">Plus</span></a>
-                    </div>
-                </div>
-                <ul class="list">
-                    <li><a href="/Flipkart-Clone/home.html">Home</a></li>
-                    <li><a href="/Flipkart-Clone/about.html">About</a></li>
-                    <li><a href="/Flipkart-Clone/contact.html">Contact</a></li>
+    <!-- <nav class="navbar navbar-expand-md bg-primary" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
                 </ul>
-                <div class="menu">
-                    <i class='bx bx-menu'></i>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2 bg-light" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav> -->
+    <nav class="navbar navbar-expand-md bg-primary sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand text-bg-primary" href="#">Flipkart</a>
+            <button class="navbar-toggler border border-0" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-primary text-bg-primary border border-white"
+                            type="submit">Search</button>
+                    </form>
                 </div>
             </div>
-            <div class="search">
-                <input type="text" name="" id="" placeholder="Search for Products, Brands and More">
-                <button class="btn">Search</button>
-            </div>
-        </nav>
-    </header>
-    
+        </div>
+    </nav>
+
     <main>
-        <div class="container">
+        <div class="container-fluid1">
             <div class="slider">
                 <img src="https://picsum.photos/400/300" alt="">
             </div>
-            
-            <div class="card">
+
+            <div class="card border border-0">
                 <h2 class="join">Best of Electronics & Appliances</h2>
                 <div class="cards">
                     <div class="card-item">
@@ -181,7 +209,7 @@
                 </div>
             </div>
 
-            <div class="card">
+            <div class="card border border-0">
                 <h2 class="join">Clothing, Furniture, Books & more</h2>
                 <div class="cards">
                     <div class="card-item">
@@ -303,8 +331,8 @@
                     </div>
                 </div>
             </div>
-            
-            <div class="card">
+
+            <div class="card border border-0">
                 <h2 class="join">Sports, Food Essentials, Fitness & more</h2>
                 <div class="cards">
                     <div class="card-item">
@@ -424,11 +452,11 @@
                             </div>
                         </a>
                     </div>
-                    
                 </div>
             </div>
         </div>
     </main>
+
     <footer class="flex-all-center">
         <div class="footer-left">
             <a href="">
@@ -442,22 +470,24 @@
             </a>
         </div>
         <div class="footer-right">
-            <a href="/Flipkart-Clone/contact.html">
+            <a href="/contact.html">
                 <p>Contact Us</p>
             </a>
             <div class="social-icons">
                 <p>Follow us on</p>
-                <a target="_blank" href="https://www.instagram.com/"><img src="/Flipkart-Clone/img/instagram.png" alt="Instagram"></a>
-                <a target="_blank" href="https://www.facebook.com/"><img src="/Flipkart-Clone/img/facebook.png" alt="Facebook"></a>
-                <a target="_blank" href="https://web.telegram.org/a/"><img src="/Flipkart-Clone/img/telegram.png" alt="Telegram"></a>
+                <a target="_blank" href="https://www.instagram.com/"><img src="/img/instagram.png" alt="Instagram"></a>
+                <a target="_blank" href="https://www.facebook.com/"><img src="/img/facebook.png" alt="Facebook"></a>
+                <a target="_blank" href="https://web.telegram.org/a/"><img src="/img/telegram.png" alt="Telegram"></a>
                 <!-- <a target="_blank" href="https://x.com/"><img src="//a.disquscdn.com/1739888300/img/icons/twitter.svg"
                         alt="X (Twitter)"></a> -->
-                <a href="https://x.com/" target="_blank" rel="noopener noreferrer"><img src="/Flipkart-Clone/img/twitter.svg"
+                <a href="https://x.com/" target="_blank" rel="noopener noreferrer"><img src="/img/twitter.svg"
                         alt=""></a>
             </div>
             <p class="copy">&copy; 2025 MyCart.com</p>
         </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
