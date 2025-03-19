@@ -11,12 +11,16 @@
     <style>
         @media (min-width: 768px) {
             .nav-item a {
-                color: white;
+                color: white !important;
             }
 
-            /*.d-flex {
-                width: 40vw;
+            /*.d-flex-column {
+                width: 30vw;
             }*/
+
+            .form-control {
+                width: 30vw;
+            }
         }
     </style>
 </head>
@@ -74,8 +78,8 @@
                             <a class="nav-link" href="/Flipkart-Clone/contact.html">Contact</a>
                         </li>
                     </ul>
-                    <form class="d-flex-column d-md-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search for Products, Brands and More" aria-label="Search">
+                    <form class="d-flex-column d-md-flex column-gap-2" role="search">
+                        <input class="form-control me-2 my-2" type="search" placeholder="Search for Products, Brands and More" aria-label="Search">
                         <button class="btn btn-outline-primary text-bg-primary border border-white"
                             type="submit">Search</button>
                     </form>
