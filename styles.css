@@ -263,13 +263,7 @@ footer {
 }
 
 .btn {
-    border: 1px solid white;
-    border-radius: 5px;
-    padding: 7px 10px;
-    margin-right: 15px;
-    background: var(--main-bg-color);
-    color: white;
-    cursor: pointer;
+    margin-right: 10px;
 }
 
 .text-center {
