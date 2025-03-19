@@ -90,11 +90,6 @@ nav {
     font-family: "Lato", serif;
 }
 
-.btn:hover {
-    background-color: rgb(0, 72, 255);
-    color: white;
-}
-
 .menu {
     display: none;
 }
