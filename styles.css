@@ -149,7 +149,6 @@ img {
 }
 
 .card {
-    /* max-width: 98vw; */
     margin: auto;
     font-family: "Ubuntu", serif;
     margin-top: 20px;
@@ -158,7 +157,6 @@ img {
 .cards {
     display: flex;
     overflow: auto;
-    /* padding-bottom: 10px; */
     gap: 10px;
     scroll-behavior: smooth;
     scrollbar-width: thin;
