@@ -157,7 +157,7 @@ img {
 .cards {
     display: flex;
     overflow: auto;
-    gap: 10px;
+    gap: 5px;
     scroll-behavior: smooth;
     scrollbar-width: thin;
 }
@@ -169,15 +169,18 @@ img {
     flex-direction: column;
     /* width: 20vw; */
     padding: 10px;
-    margin: 0 15px 15px 15px;
+    margin: 15px;
     border: 1px solid #e7e4e4;
     border-radius: 10px;
+}
+
+.card-item:hover {
+    box-shadow: 0 3px 16px 0 rgba(0, 0, 0, .11);
 }
 
 .card-item img {
     /* max-width: 100%; */
     height: auto;
-    border-radius: 5px;
 }
 
 .card-item a {
@@ -263,8 +266,8 @@ footer {
 }
 
 .join {
-    margin: 20px 0;
-    /* padding-top: 20px; */
+    /* margin: 20px 0; */
+    padding-top: 20px;
 }
 
 .my-1 {
