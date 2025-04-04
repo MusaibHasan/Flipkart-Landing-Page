@@ -270,6 +270,12 @@ footer {
     padding-top: 20px;
 }
 
+.lines {
+    width: 10em;
+    justify-self: center;
+/*     padding: 5px 10px; */
+}
+
 .my-1 {
     /* margin-top: 10px; */
     /* font-size: 1rem; */
@@ -288,10 +294,4 @@ footer {
     overflow: hidden;
     text-overflow: ellipsis;
     /* Optional: Adds "..." if text overflows */
-}
-
-.lines {
-    width: 10em;
-    justify-self: center;
-    padding: 5px 10px;
 }
