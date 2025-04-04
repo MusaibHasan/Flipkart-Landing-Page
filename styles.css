@@ -293,4 +293,5 @@ footer {
 .lines {
     width: 10em;
     justify-self: center;
+    padding: 5px 10px;
 }
