@@ -26,7 +26,7 @@
 
     .logo {
         justify-content: center;
-/*         margin: 12px 0; */
+        /* margin: 12px 0; */
     }
 
     .list {
@@ -56,9 +56,9 @@
         overflow-x: auto;
     } */
 
-    .card-item {
+    /* .card-item {
         width: 35vw;
-    }
+    } */
 
     .card-item img {
         /* width: 30vw; */
@@ -97,7 +97,7 @@
 
     .logo {
         justify-content: center;
-/*         margin: 12px 0; */
+        /* margin: 12px 0; */
     }
 
     .list {
@@ -152,9 +152,9 @@
         height: 30vh;
     }
 
-    .card-item {
+    /* .card-item {
         width: 40vw;
-    }
+    } */
 
     .card .join {
         font-size: 1.2em;
