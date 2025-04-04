@@ -60,11 +60,6 @@
         width: 35vw;
     } */
 
-    .card-item img {
-        /* width: 30vw; */
-        height: auto;
-    }
-
     .footer-left,
     .footer-right {
         display: flex;
