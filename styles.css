@@ -178,11 +178,6 @@ img {
     box-shadow: 0 3px 16px 0 rgba(0, 0, 0, .11);
 }
 
-.card-item img {
-    /* max-width: 100%; */
-    height: auto;
-}
-
 .card-item a {
     color: black;
 }
