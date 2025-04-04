@@ -157,7 +157,7 @@ img {
 .cards {
     display: flex;
     overflow: auto;
-/*     gap: 5px; */
+    /* gap: 5px; */
     scroll-behavior: smooth;
     scrollbar-width: thin;
 }
@@ -176,6 +176,10 @@ img {
 
 .card-item:hover {
     box-shadow: 0 3px 16px 0 rgba(0, 0, 0, .11);
+    transform: scale(1.05);
+    /* Slight scale-up for bulge effect */
+    transition: transform 0.3s ease;
+    /* transition-duration: .3s; */
 }
 
 .card-item a {
@@ -268,7 +272,7 @@ footer {
 .lines {
     width: 10em;
     justify-self: center;
-/*     padding: 5px 10px; */
+    /* padding: 5px 10px; */
 }
 
 .my-1 {
@@ -283,6 +287,16 @@ footer {
 }
 
 .my-2 {
+    font-weight: 500;
+    color: rgb(16, 137, 52);
+    line-height: 1.1rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* Optional: Adds "..." if text overflows */
+}
+
+.my-3 {
     font-weight: 500;
     color: rgb(199, 0, 85);
     line-height: 1.1rem;
