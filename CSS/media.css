@@ -59,6 +59,11 @@
     /* .card-item {
         width: 35vw;
     } */
+    .card-item img {
+        max-width: 140px !important;
+        width: 100%;
+        height: auto;
+    }
 
     .footer-left,
     .footer-right {
@@ -151,17 +156,27 @@
         width: 40vw;
     } */
 
+    .card-item img {
+        max-width: 100px !important;
+        width: 100%;
+        height: auto;
+    }
+
     .card .join {
-        font-size: 1.2em;
+        font-size: 1.1em;
         margin-left: 1.6vh;
     }
 
     .my-1 {
-        font-size: 0.95em;
+        font-size: 1rem;
     }
 
     .my-2 {
-        font-size: 1em;
+        font-size: 1.2rem;
+    }
+
+    .my-3 {
+        font-size: 0.9rem;
     }
 
     /* .social-icons a img {
