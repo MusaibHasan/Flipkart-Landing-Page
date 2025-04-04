@@ -284,6 +284,7 @@ footer {
 
 .my-2 {
     font-weight: 500;
+    color: rgb(199, 0, 85);
     line-height: 1.1rem;
     white-space: nowrap;
     overflow: hidden;
