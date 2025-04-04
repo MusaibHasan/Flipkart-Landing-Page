@@ -157,7 +157,7 @@ img {
 .cards {
     display: flex;
     overflow: auto;
-    gap: 5px;
+/*     gap: 5px; */
     scroll-behavior: smooth;
     scrollbar-width: thin;
 }
