@@ -154,12 +154,13 @@
         height: 30vh;
     }
 
-    /* .card-item {
-        width: 40vw;
-    } */
+    .card-item {
+        /* width: 40vw; */
+        max-height: 210px;
+    }
 
     .card-item img {
-        max-width: 100px !important;
+        max-width: 115px !important;
         width: 100%;
         height: auto;
     }
