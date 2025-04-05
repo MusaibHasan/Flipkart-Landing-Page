@@ -87,8 +87,8 @@
     }
 
     .social-icons a img {
-        width: 1em;
-        height: 1em;
+        width: 1.1em;
+        height: 1.1em;
     }
 }
 
@@ -176,10 +176,6 @@
 
     .my-2 {
         font-size: 1rem;
-    }
-
-    .my-3 {
-        font-size: 0.9rem;
     }
 
     /* .social-icons a img {
