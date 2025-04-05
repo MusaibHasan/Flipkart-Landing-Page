@@ -56,9 +56,11 @@
         overflow-x: auto;
     } */
 
-    /* .card-item {
-        width: 35vw;
-    } */
+    .card-item {
+        /* width: 35vw; */
+        max-height: 240px;
+    }
+
     .card-item img {
         max-width: 140px !important;
         width: 100%;
