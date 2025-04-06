@@ -235,14 +235,6 @@ img {
     text-decoration: underline;
 }
 
-.copy {
-    font-size: 0.8em;
-    position: absolute;
-    right: 0;
-    top: 20px;
-    /* padding: 10px 0; */
-}
-
 footer {
     height: 13vh;
     background-color: var(--main-bg-color);
