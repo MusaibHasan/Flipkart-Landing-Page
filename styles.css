@@ -297,3 +297,33 @@ footer {
 .text-danger {
     font-size: 14px;
 }
+
+.text-danger span {
+    animation: vibrate 0.5s ease-in-out infinite;
+}
+
+@keyframes vibrate {
+    0% {
+        margin-left: 0;
+    }
+
+    20% {
+        margin-left: -2px;
+    }
+
+    40% {
+        margin-left: 2px;
+    }
+
+    60% {
+        margin-left: -2px;
+    }
+
+    80% {
+        margin-left: 2px;
+    }
+
+    100% {
+        margin-left: 0;
+    }
+}
