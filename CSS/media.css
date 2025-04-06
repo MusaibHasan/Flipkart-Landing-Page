@@ -74,7 +74,7 @@
         justify-content: space-between;
         align-items: flex-start;
         height: 85%;
-        font-size: 0.9em;
+        /* font-size: 0.9em; */
     }
 
     .copy {
@@ -188,6 +188,6 @@
     }
 
     .copy {
-        font-size: 0.725em;
+        font-size: 0.75em;
     }
 }
