@@ -308,8 +308,14 @@ footer {
 
 /* Override offcanvas animation duration */
 .offcanvas {
+    will-change: transform;
     transition: transform 0.2s ease-in-out !important;
     /* Faster animation (100ms) */
+}
+
+/* Optional: Remove default Bootstrap backdrop transition delay */
+.offcanvas-backdrop {
+    transition: opacity 0.2s ease-in-out !important;
 }
 
 @keyframes glow {
