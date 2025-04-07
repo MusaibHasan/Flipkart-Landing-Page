@@ -308,7 +308,7 @@ footer {
 
 /* Override offcanvas animation duration */
 .offcanvas {
-    transition: transform 0.1s ease-in-out !important;
+    transition: transform 0.2s ease-in-out !important;
     /* Faster animation (100ms) */
 }
 
