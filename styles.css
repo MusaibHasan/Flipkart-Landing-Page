@@ -306,6 +306,12 @@ footer {
     animation: vibrate 0.5s ease-in-out infinite;
 }
 
+/* Override offcanvas animation duration */
+.offcanvas {
+    transition: transform 0.1s ease-in-out !important;
+    /* Faster animation (100ms) */
+}
+
 @keyframes glow {
     0% {
         color: rgb(25 135 84);
@@ -314,7 +320,7 @@ footer {
     50% {
         color: rgb(76, 173, 76);
     }
-    
+
     100% {
         color: darkgreen;
         /* font-weight: 600; */
