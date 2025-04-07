@@ -294,12 +294,31 @@ footer {
     /* Optional: Adds "..." if text overflows */
 }
 
+.text-success span {
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
 .text-danger {
     font-size: 14px;
 }
 
 .text-danger span {
     animation: vibrate 0.5s ease-in-out infinite;
+}
+
+@keyframes glow {
+    0% {
+        color: rgb(25 135 84);
+    }
+
+    50% {
+        color: rgb(76, 173, 76);
+    }
+    
+    100% {
+        color: darkgreen;
+        /* font-weight: 600; */
+    }
 }
 
 @keyframes vibrate {
