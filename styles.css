@@ -116,6 +116,10 @@ footer {
     /* padding: 5px 10px; */
 }
 
+.my-1 {
+    display: flex;
+}
+
 .my-2 {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     letter-spacing: 1px;
