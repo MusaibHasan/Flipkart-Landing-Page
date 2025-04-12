@@ -20,22 +20,9 @@
         /* justify-content: space-between; */
     }
 
-    .header {
-        width: 95%;
-    }
-
     .logo {
         justify-content: center;
         /* margin: 12px 0; */
-    }
-
-    .list {
-        justify-content: center;
-        height: 30px;
-    }
-
-    .list li {
-        padding: 0 15px;
     }
 
     .search {
@@ -46,10 +33,6 @@
     .search input {
         margin: 10px 15px;
         width: 100%;
-    }
-
-    .slider {
-        height: 40vh;
     }
 
     /* .cards {
@@ -107,41 +90,7 @@
     }
 
     .MwbhDR {
-        font-size: 11px;
-    }
-
-    .list {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        right: 50px;
-        /* transform: translateX(-350px);
-        transition-duration: 0.45s; */
-        padding: 10px;
-        list-style-type: none;
-    }
-
-    /* Show the menu when the toggle class is active */
-    .list.active {
-        display: flex;
-        /* background-color: blue; */
-    }
-
-    .list li a {
-        color: white;
-    }
-
-    .list li a:hover {
-        text-decoration: underline;
-        text-shadow: none;
-    }
-
-    .menu {
-        display: block;
-        cursor: pointer;
-        margin-right: 7px;
-        color: white;
-        font-size: 2em;
+        margin-left: 18px;
     }
 
     .search {
@@ -155,11 +104,6 @@
 
     .btn {
         margin-right: 5px;
-    }
-
-    .slider {
-        width: 95vw;
-        height: 30vh;
     }
 
     .card-item {
@@ -176,10 +120,6 @@
     .card .join {
         font-size: 1.1em;
         margin-left: 1.6vh;
-    }
-
-    .my-1 {
-        font-size: 0.95rem;
     }
 
     .my-2 {
