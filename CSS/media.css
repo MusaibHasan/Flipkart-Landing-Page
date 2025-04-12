@@ -102,6 +102,14 @@
         /* margin: 12px 0; */
     }
 
+    .logo img {
+        width: 85px !important;
+    }
+
+    .MwbhDR {
+        font-size: 11px;
+    }
+
     .list {
         display: none;
         flex-direction: column;
