@@ -134,7 +134,7 @@ footer {
 /* Override offcanvas animation duration */
 .offcanvas {
     will-change: transform;
-    transition: transform 0.2s cubic-bezier(.4, 0, .2, 1) !important;
+    transition: transform 0.15s cubic-bezier(.4, 0, .2, 1) !important;
     /* Faster animation (100ms) */
 }
 
@@ -142,6 +142,37 @@ footer {
 .offcanvas-backdrop {
     transition: opacity 0.2s ease-in-out !important;
 }
+
+/* Dark mode overrides */
+body.dark-mode {
+    background-color: #121212;
+    color: #e9ecef;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Optional: override Bootstrap elements */
+body.dark-mode .navbar {
+    background-color: #151b23 !important;
+}
+
+body.dark-mode main,
+body.dark-mode footer {
+    background-color: #212830 !important;
+}
+
+body.dark-mode .offcanvas {
+    background-color: #2a313c !important;
+    color: #e9ecef !important;
+}
+
+body.dark-mode .btn-outline-dark {
+    border-color: #e9ecef !important;
+    color: #e9ecef !important;
+}
+
+/* body.dark-mode a {
+    color: #ffffff;
+} */
 
 @keyframes glow {
     0% {
