@@ -170,6 +170,10 @@ body.dark-mode .btn-outline-dark {
     color: #e9ecef !important;
 }
 
+body.dark-mode .btn-close {
+    filter: invert(1);
+}
+
 /* body.dark-mode a {
     color: #ffffff;
 } */
