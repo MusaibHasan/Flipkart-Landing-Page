@@ -8,8 +8,9 @@ document.addEventListener('DOMContentLoaded', () => {
         themeToggleBtn.textContent = 'Light Mode';
     }
 
-    themeToggleBtn.addEventListener('click', () => {
-        document.body.classList.toggle('dark-mode');
+    document.getElementById("themeToggleBtn").addEventListener("click", function (e) {
+        e.preventDefault(); // stops reload no matter what
+        document.body.classList.toggle("dark-mode");
 
         // Save preference
         if (document.body.classList.contains('dark-mode')) {
@@ -17,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
             themeToggleBtn.textContent = 'Light Mode';
         } else {
             localStorage.setItem('theme', 'light');
-            themeToggleBtn.textContent = 'Dark Mode';
+            themeToggleBtn.textContent = '🌙';
         }
     });
 });
