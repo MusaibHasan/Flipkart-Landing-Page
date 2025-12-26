@@ -99,7 +99,7 @@ img {
 }
 
 footer {
-    height: 13vh;
+    height: 10vh;
     background-color: var(--main-bg-color);
     color: white;
     font-family: "Lato", serif;
@@ -151,13 +151,40 @@ body.dark-mode {
 }
 
 /* Optional: override Bootstrap elements */
-body.dark-mode .navbar {
+body.dark-mode .navbar,
+body.dark-mode #searchBtn {
+    background-color: #212830 !important;
+}
+
+body.dark-mode #searchBtn:hover {
+    background-color: #0d6efd !important;
+}
+
+body.dark-mode main {
     background-color: #151b23 !important;
 }
 
-body.dark-mode main,
-body.dark-mode footer {
+body.dark-mode .card {
     background-color: #212830 !important;
+    color: #e9ecef !important;
+}
+
+body.dark-mode .card-item a {
+    color: #e9ecef !important;
+}
+
+body.dark-mode footer {
+    background-color: #151b23 !important;
+}
+
+body.dark-mode .form-control {
+    background-color: #2a313c !important;
+    color: #e9ecef !important;
+    border: 1px solid #697385 !important;
+}
+
+body.dark-mode .form-control::placeholder {
+    color: #b0b8c1 !important;
 }
 
 body.dark-mode .offcanvas {
@@ -165,12 +192,10 @@ body.dark-mode .offcanvas {
     color: #e9ecef !important;
 }
 
-body.dark-mode .btn-outline-dark {
-    border-color: #e9ecef !important;
-    color: #e9ecef !important;
-}
-
+body.dark-mode #themeToggleBtn,
 body.dark-mode .btn-close {
+    /* border-color: #e9ecef !important;
+    color: #e9ecef !important; */
     filter: invert(1);
 }
 
