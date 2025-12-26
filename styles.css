@@ -44,8 +44,12 @@ img {
     /* font-weight: 500; */
 }
 
+main {
+    min-height: calc(100vh - 10vh - 60px);
+}
+
 .card {
-    /* margin: auto; */
+    margin: 0 10px;
     font-family: "Ubuntu", serif;
 }
 
@@ -156,11 +160,29 @@ body.dark-mode #searchBtn {
     background-color: #212830 !important;
 }
 
+body.dark-mode #searchBtn {
+    color: #e9ecef !important;
+    border-color: #697385 !important;
+}
+
+body.dark-mode .navbar-nav .nav-link {
+    color: #e9ecef !important;
+}
+
+body.dark-mode .navbar-nav .nav-link:hover {
+    color: #0d6efd !important;
+}
+
+body.dark-mode .navbar-toggler {
+    color: rgb(33 40 48) !important;
+}
+
 body.dark-mode #searchBtn:hover {
     background-color: #0d6efd !important;
 }
 
-body.dark-mode main {
+body.dark-mode main,
+body.dark-mode footer {
     background-color: #151b23 !important;
 }
 
@@ -171,10 +193,6 @@ body.dark-mode .card {
 
 body.dark-mode .card-item a {
     color: #e9ecef !important;
-}
-
-body.dark-mode footer {
-    background-color: #151b23 !important;
 }
 
 body.dark-mode .form-control {
