@@ -112,7 +112,7 @@ main {
 
 footer {
     height: 12vh;
-    background-color: var(--main-bg-color);
+    background-color: #172337;
     color: white;
     font-family: "Lato", serif;
     overflow-x: hidden;
