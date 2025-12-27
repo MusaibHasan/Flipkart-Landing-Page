@@ -97,11 +97,16 @@ main {
     font-size: 0.9em;
 }
 
-/* .flex-all-center p {
+.flex-all-center p {
     margin-bottom: 0rem !important;
-} */
+}
 
 .flex-all-center a {
+    color: white;
+}
+
+.flex-all-center a:hover {
+    text-decoration: underline !important;
     color: white;
 }
 
