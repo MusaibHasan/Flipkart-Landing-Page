@@ -12,7 +12,10 @@
 }
 
 body {
+    transition: background-color 0.3s ease, color 0.3s ease;
     background-color: rgb(241 242 244) !important;
+    font-family: 'Lato', serif;
+    overflow-x: hidden;
 }
 
 .navbar-toggler .navbar-toggler-icon {
@@ -45,7 +48,8 @@ img {
 }
 
 main {
-    min-height: calc(100vh - 10vh - 60px);
+    min-height: calc(100vh - 12vh - 56px);
+    overflow-x: hidden;
 }
 
 .card {
@@ -89,24 +93,24 @@ main {
 }
 
 .flex-all-center {
-    padding: 10px;
     /* text-align: center; */
     font-size: 0.9em;
 }
 
-.flex-all-center p {
+/* .flex-all-center p {
     margin-bottom: 0rem !important;
-}
+} */
 
 .flex-all-center a {
     color: white;
 }
 
 footer {
-    height: 10vh;
+    height: 12vh;
     background-color: var(--main-bg-color);
     color: white;
     font-family: "Lato", serif;
+    overflow-x: hidden;
 }
 
 .btn {
