@@ -196,6 +196,22 @@ body.dark-mode {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+#themeIcon {
+    font-size: 1.1rem;
+    transition: color 0.3s ease !important;
+}
+
+/* Dark mode → Sun should be warm yellow */
+body.dark-mode #themeIcon {
+    color: #f5c542 !important;
+    /* soft sun yellow */
+}
+
+/* Light mode → Moon neutral */
+body:not(.dark-mode) #themeIcon {
+    color: #333 !important;
+}
+
 /* Optional: override Bootstrap elements */
 body.dark-mode .navbar,
 body.dark-mode #searchBtn {
@@ -207,13 +223,13 @@ body.dark-mode #searchBtn {
     border-color: #697385 !important;
 }
 
-body.dark-mode .navbar-nav .nav-link {
+/* body.dark-mode .navbar-nav .nav-link {
     color: #e9ecef !important;
 }
 
 body.dark-mode .navbar-nav .nav-link:hover {
     color: #0d6efd !important;
-}
+} */
 
 body.dark-mode .navbar-toggler {
     color: rgb(33 40 48) !important;
@@ -252,8 +268,33 @@ body.dark-mode .offcanvas {
     color: #e9ecef !important;
 }
 
+body.dark-mode .offcanvas-backdrop {
+    background-color: rgba(0, 0, 0, 0.85);
+}
+
+body.dark-mode .offcanvas .nav-link {
+    color: #e9ecef !important;
+}
+
+body.dark-mode .offcanvas .nav-link:hover {
+    color: #0d6efd !important;
+}
+
+body.dark-mode .offcanvas a {
+    color: #eaeaea;
+}
+
+body.dark-mode .offcanvas a:hover {
+    color: #f5c542;
+}
+
 body.dark-mode #themeToggleBtn {
     border: 1px solid #697385 !important;
+}
+
+body.dark-mode #themeToggleBtn::after {
+    background-color: #f5c542 !important;
+    color: #000;
 }
 
 body.dark-mode #themeToggleBtn,
