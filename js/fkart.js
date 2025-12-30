@@ -24,29 +24,29 @@
 // });
 
 const btn = document.getElementById("themeToggleBtn");
+const icon = document.getElementById("themeIcon");
 const body = document.body;
 
 // Load saved theme
 if (localStorage.getItem("theme") === "dark") {
     body.classList.add("dark-mode");
-    btn.textContent = "☀️";
+    icon.textContent = "☀️";
     btn.setAttribute("data-label", "Light Mode");
 } else {
-    btn.textContent = "🌙";
+    icon.textContent = "🌙";
     btn.setAttribute("data-label", "Dark Mode");
 }
 
 btn.addEventListener("click", (e) => {
     e.preventDefault();
-
     body.classList.toggle("dark-mode");
 
     if (body.classList.contains("dark-mode")) {
-        btn.textContent = "☀️";
+        icon.textContent = "☀️";
         btn.setAttribute("data-label", "Light Mode");
         localStorage.setItem("theme", "dark");
     } else {
-        btn.textContent = "🌙";
+        icon.textContent = "🌙";
         btn.setAttribute("data-label", "Dark Mode");
         localStorage.setItem("theme", "light");
     }
