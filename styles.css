@@ -73,14 +73,14 @@ img {
 }
 
 main {
-    min-height: calc(100vh - 12vh - 56px);
+    /* min-height: calc(100vh - 12vh - 56px); */
     overflow-x: hidden;
     transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
 }
 
 .card {
     margin: 0 10px;
-    font-family: "Ubuntu", serif;
+    font-family: "Lato", serif;
     transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
 }
 
@@ -114,14 +114,22 @@ main {
     letter-spacing: 1px;
 }
 
+.bxl {
+    font-family: boxicons-brands !important;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    display: inline-block;
+    speak-as: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
 .social-icons a img {
     width: 1.3em;
     height: 1.3em;
-}
-
-.flex-all-center {
-    /* text-align: center; */
-    font-size: 0.9em;
 }
 
 .flex-all-center p {
@@ -129,21 +137,31 @@ main {
 }
 
 .flex-all-center a {
-    color: white;
+    color: #d1d7e0 !important;
 }
 
 .flex-all-center a:hover {
     text-decoration: underline !important;
-    color: white;
+    color: #0d6efd !important;
 }
 
 footer {
-    height: 12vh;
+    height: 15vh;
     background-color: #172337;
-    color: white;
+    color: #d1d7e0 !important;
+    border-top: #3d444d solid 1px;
     font-family: "Lato", serif;
     overflow-x: hidden;
     transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.copy {
+    color: #999b9f !important;
+    position: absolute;
+    right: 0;
+    top: 20px;
+    width: auto;
+    text-align: end;
 }
 
 .btn {
@@ -197,7 +215,7 @@ body.dark-mode {
 }
 
 #themeIcon {
-    font-size: 1.1rem;
+    color: #333;
     transition: color 0.3s ease !important;
 }
 
