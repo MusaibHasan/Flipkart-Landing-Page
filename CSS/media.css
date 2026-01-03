@@ -57,7 +57,7 @@
         justify-content: space-between;
         align-items: flex-start;
         height: 85%;
-        /* font-size: 0.9em; */
+        font-size: 0.825em;
     }
 
     .copy {
@@ -133,7 +133,7 @@
     } */
 
     .flex-all-center {
-        font-size: 0.825em;
+        font-size: 0.725em !important;
     }
 
     .copy {
