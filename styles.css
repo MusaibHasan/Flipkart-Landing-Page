@@ -174,7 +174,7 @@ footer {
 }
 
 .my-2 {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
     letter-spacing: 1px;
 }
 
@@ -366,3 +366,4 @@ body.dark-mode .btn-close {
         margin-left: 0;
     }
 }
+
