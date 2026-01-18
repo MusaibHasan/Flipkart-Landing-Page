@@ -51,3 +51,21 @@ btn.addEventListener("click", (e) => {
         localStorage.setItem("theme", "light");
     }
 });
+
+document.querySelectorAll('.dropdown-toggle-mobile').forEach(toggle => {
+    toggle.addEventListener('click', function (e) {
+        if (window.innerWidth >= 992) return; // desktop → ignore
+
+        e.preventDefault();
+
+        const navItem = this.closest('.nav-item');
+
+        // Close other open accordions
+        document.querySelectorAll('.nav-item.open').forEach(item => {
+            if (item !== navItem) item.classList.remove('open');
+        });
+
+        // Toggle current
+        navItem.classList.toggle('open');
+    });
+});
