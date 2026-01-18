@@ -15,33 +15,6 @@
     <link rel="icon"
         href="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/logo_lite-cbb357.png"
         type="image/png">
-    <style>
-        @media (min-width: 992px) {
-            .nav-item a {
-                color: white !important;
-            }
-
-            body.dark-mode .navbar-nav,
-            body.dark-mode .d-flex-column {
-                background-color: #212830 !important;
-            }
-
-            .form-control {
-                width: 30vw !important;
-                margin-top: 0em !important;
-                margin-bottom: 0em !important;
-            }
-
-            body.dark-mode .form-control {
-                background-color: #212830 !important;
-                color: #e9ecef !important;
-            }
-
-            #searchBtn:hover {
-                background-color: rgb(2, 104, 186) !important;
-            }
-        }
-    </style>
 </head>
 
 <body>
@@ -53,7 +26,8 @@
                         href="https://www.flipkart.com/"><img src="/Flipkart-Landing-Page/img/flipkart-logo.png" style="width: 80px;"
                             alt="Flipkart" title="Flipkart" class="TVd0Ah"></a>
                     <a class="MwbhDR fst-italic" href="https://www.flipkart.com/plus">Explore <span
-                            class="s4NJ5L">Plus</span><img style="width: 10px; margin-bottom: 3px;" src="/Flipkart-Landing-Page/img/plus_aef861.png"></a>
+                            class="s4NJ5L">Plus</span><img style="width: 10px; margin-bottom: 3px;"
+                            src="/Flipkart-Landing-Page/img/plus_aef861.png"></a>
                 </div>
                 <button class="navbar-toggler border border-0 me-3 order-first" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
@@ -69,18 +43,42 @@
                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body">
-                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-5 column-gap-4 ps-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-primary link-secondary"
-                                href="https://corporate.flipkart.net/corporate-home">Home</a>
+                    <ul class="navbar-nav justify-content-end flex-grow-1 column-gap-3 pe-lg-5 ps-1 ps-lg-0">
+                        <li class="nav-item d-inline-block position-relative">
+                            <a class="nav-link d-flex align-items-center position-relative text-primary"
+                                href="https://corporate.flipkart.net/corporate-home">Home
+                                <i class='bx bx-chevron-down text-primary' style='color:#FFFFFF'></i>
+                            </a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-primary link-secondary"
-                                href="https://corporate.flipkart.net/about-us">About</a>
+                        <li class="nav-item d-inline-block position-relative">
+                            <a class="nav-link d-flex align-items-center position-relative text-primary dropdown-toggle-mobile"
+                                href="" role="button">About
+                                <i class='bx bx-chevron-down text-primary' style='color:#FFFFFF'></i>
+                            </a>
+                            <div class="nav-dropdown">
+                                <a href="https://corporate.flipkart.net/corporate-home">About Us</a>
+                                <a href="https://www.flipkart.com/helpcentre?otracker=footer_navlinks">Contact Us</a>
+                                <a href="https://stories.flipkart.com/?otracker=footer_navlinks">Our Story</a>
+                                <a
+                                    href="https://flipkart.turbohire.co/careerpage/4d757ba0-3d57-448a-b82c-238ed87ac90f">Careers</a>
+                                <a href="https://www.flipkart.com/corporate-information">Corporate Information</a>
+                            </div>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-primary link-secondary"
-                                href="https://www.flipkart.com/helpcentre?otracker=footer_navlinks">Contact</a>
+                        <li class="nav-item d-inline-block position-relative">
+                            <a class="nav-link d-flex align-items-center position-relative text-primary dropdown-toggle-mobile"
+                                href="" role="button">More
+                                <i class='bx bx-chevron-down text-primary' style='color:#FFFFFF'></i>
+                            </a>
+                            <div class="nav-dropdown">
+                                <a href="https://www.flipkart.com/communication-preferences/push?t=all">Notification
+                                    Preferences</a>
+                                <a href="https://seller.flipkart.com/sell-online">Sell on Flipkart</a>
+                                <a href="https://www.flipkart.com/helpcentre">24x7 Customer Care</a>
+                                <a
+                                    href="https://advertising.flipkart.com/login?returl=/?otracker=ch_vn_advertise_header">Advertise</a>
+                                <a href="https://www.flipkart.com/mobile-apps?otracker=ch_vn_mobile_apps">Download
+                                    App</a>
+                            </div>
                         </li>
                     </ul>
                     <form class="d-flex-column d-lg-flex column-gap-1" role="search">
@@ -98,7 +96,7 @@
             </div>
         </div>
     </nav>
-
+    
     <!-- Main Content -->
     <main>
         <div class="container-fluid pt-3 pb-5">
@@ -845,3 +843,4 @@
 </body>
 
 </html>
+
