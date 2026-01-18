@@ -2,14 +2,6 @@
    MOBILE ACCORDION DROPDOWN
 ================================ */
 @media (max-width: 991px) {
-
-    /* Disable hover dropdown on mobile */
-    .nav-item:hover .nav-dropdown {
-        opacity: 0;
-        visibility: hidden;
-        transform: none;
-    }
-
     /* Base dropdown (collapsed) */
     .offcanvas .nav-dropdown {
         position: static;
@@ -178,3 +170,4 @@
         font-size: 0.725em !important;
     }
 }
+
