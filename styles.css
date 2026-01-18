@@ -56,6 +56,7 @@ body::-webkit-scrollbar {
 .nav-link {
     transition: background 0.2s ease;
     border-radius: 4px;
+    justify-content: space-between;
 }
 
 .nav-item:hover .nav-link {
@@ -104,11 +105,12 @@ body::-webkit-scrollbar {
     display: block;
     padding: 10px 14px;
     font-size: 14px;
-    /* transition: background 0.2s ease; */
+    transition: background 0.2s ease, padding-left 0.2s ease;
 }
 
 .nav-dropdown a:hover {
     background: rgba(255, 255, 255, 0.15) !important;
+    padding-left: 20px;
 }
 
 a,
@@ -297,6 +299,9 @@ footer {
 
 /* Override offcanvas animation duration */
 .offcanvas {
+    background-color: #f3f3f3 !important;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
     will-change: transform;
     transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease !important;
     /* transition: transform 0.2s cubic-bezier(.4, 0, .2, 1) !important; */
@@ -409,9 +414,31 @@ body.dark-mode .offcanvas .nav-link {
     color: #e9ecef !important;
 }
 
+/* ===============================
+   ACCORDION ACTIVE STATE
+================================ */
+.offcanvas .nav-item.open .nav-link {
+    background: rgba(255, 255, 255, 0.08);
+}
+
+body:not(.dark-mode) .offcanvas .nav-item.open .nav-link {
+    background: rgba(0, 0, 0, 0.05);
+}
+
 body.dark-mode .offcanvas .nav-dropdown {
     background-color: #212830 !important;
-    box-shadow: -14px 9px 36px -14px #000000;
+    /* box-shadow: -14px 9px 36px -14px #000000; */
+}
+
+/* ===============================
+   INNER DROPDOWN CARD
+================================ */
+.offcanvas .nav-dropdown {
+    background: rgba(0, 0, 0, 0.12);
+}
+
+body:not(.dark-mode) .offcanvas .nav-dropdown {
+    background: rgba(0, 0, 0, 0.04);
 }
 
 body.dark-mode .offcanvas .nav-dropdown a {
