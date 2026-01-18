@@ -2,8 +2,39 @@
    MOBILE ACCORDION DROPDOWN
 ================================ */
 @media (max-width: 991px) {
+
+    /* Disable hover dropdown on mobile */
+    /* .nav-item:hover .nav-dropdown {
+        opacity: 0;
+        visibility: hidden;
+        transform: none;
+    } */
+
+    .offcanvas {
+        box-shadow:
+            8px 0 24px rgba(0, 0, 0, 0.25),
+            2px 0 6px rgba(0, 0, 0, 0.15);
+    }
+
+    .offcanvas .nav-item.open .nav-link {
+        justify-content: space-between;
+        border-radius: 0;
+        border-top-left-radius: 10px !important;
+        border-top-right-radius: 10px !important;
+        background-color: #ffffff !important;
+    }
+
+    body.dark-mode .offcanvas .nav-item.open .nav-link {
+        background-color: #212830 !important;
+    }
+
+    .offcanvas .bx-chevron-down {
+        transition: transform 0.3s ease;
+    }
+
     /* Base dropdown (collapsed) */
     .offcanvas .nav-dropdown {
+        background-color: #ffffff !important;
         position: static;
         opacity: 1;
         visibility: visible;
@@ -12,7 +43,10 @@
         overflow: hidden;
         box-shadow: none;
         border-radius: 0;
-        transition: max-height 0.3s ease;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        transform: translate3d(0, 0, 0);
+        /* transition: max-height 0.3s ease; */
     }
 
     /* Expanded state */
@@ -170,4 +204,3 @@
         font-size: 0.725em !important;
     }
 }
-
