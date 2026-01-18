@@ -1,3 +1,75 @@
+@media (min-width: 992px) {
+    .nav-item a {
+        color: white !important;
+    }
+
+    .bx-chevron-down {
+        color: white !important;
+    }
+
+    body.dark-mode .navbar-nav,
+    body.dark-mode .d-flex-column {
+        background-color: #212830 !important;
+    }
+
+    .form-control {
+        width: 30vw !important;
+        margin-top: 0em !important;
+        margin-bottom: 0em !important;
+    }
+
+    body.dark-mode .form-control {
+        background-color: #212830 !important;
+        color: #e9ecef !important;
+    }
+
+    #searchBtn:hover {
+        background-color: rgb(2, 104, 186) !important;
+    }
+}
+
+/* ===============================
+   MOBILE ACCORDION DROPDOWN
+================================ */
+@media (max-width: 991px) {
+
+    /* Disable hover dropdown on mobile */
+    .nav-item:hover .nav-dropdown {
+        opacity: 0;
+        visibility: hidden;
+        transform: none;
+    }
+
+    /* Base dropdown (collapsed) */
+    .offcanvas .nav-dropdown {
+        position: static;
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+        max-height: 0;
+        overflow: hidden;
+        box-shadow: none;
+        border-radius: 0;
+        transition: max-height 0.3s ease;
+    }
+
+    /* Expanded state */
+    .offcanvas .nav-item.open .nav-dropdown {
+        max-height: 500px;
+        /* enough for links */
+    }
+
+    /* Arrow rotation on open */
+    .offcanvas .nav-item.open .bx-chevron-down {
+        transform: rotate(180deg);
+    }
+
+    /* Better spacing */
+    .offcanvas .nav-dropdown a {
+        padding-left: 24px;
+    }
+}
+
 @media (min-width: 768px) {
     .copy {
         font-size: 0.9em;
