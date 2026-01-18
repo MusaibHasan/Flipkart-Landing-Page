@@ -49,6 +49,68 @@ body::-webkit-scrollbar {
     transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease !important;
 }
 
+.nav-item {
+    position: relative;
+}
+
+.nav-link {
+    transition: background 0.2s ease;
+    border-radius: 4px;
+}
+
+.nav-item:hover .nav-link {
+    background: rgba(255, 255, 255, 0.15);
+}
+
+/* Arrow */
+.bx-chevron-down {
+    margin-left: 4px;
+    margin-top: 2px;
+    font-size: 20px;
+    /* transition: transform 0.2s ease; */
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, transform 0.2s ease !important;
+}
+
+/* Rotate arrow */
+.nav-item:hover .bx-chevron-down {
+    transform: rotate(180deg);
+}
+
+/* Dropdown */
+.nav-dropdown {
+    position: absolute;
+    top: 110%;
+    left: 0;
+    min-width: 220px;
+    background-color: var(--main-bg-color) !important;
+    box-shadow: -14px 9px 36px -14px #97a9bb;
+    border-radius: 4px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(8px);
+    transition: all 0.25s ease;
+    z-index: 1000;
+}
+
+/* Show dropdown */
+.nav-item:hover .nav-dropdown {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+/* Dropdown items */
+.nav-dropdown a {
+    display: block;
+    padding: 10px 14px;
+    font-size: 14px;
+    /* transition: background 0.2s ease; */
+}
+
+.nav-dropdown a:hover {
+    background: rgba(255, 255, 255, 0.15) !important;
+}
+
 a,
 img {
     text-decoration: none !important;
@@ -114,6 +176,11 @@ main .container-fluid {
     padding-right: 15px;
     background-color: #f1f2f4;
     transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease !important;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    opacity: 1 !important;
 }
 
 .card {
@@ -185,7 +252,7 @@ main .container-fluid {
 
 footer {
     height: 15vh;
-    background-color: #172337;
+    background-color: #212121 !important;
     color: #d1d7e0 !important;
     border-top: #3d444d solid 1px;
     font-family: "Lato", serif;
@@ -299,7 +366,7 @@ body.dark-mode #searchBtn:hover {
 
 body.dark-mode main,
 body.dark-mode footer {
-    background-color: #151b23 !important;
+    background-color: #172337 !important;
 }
 
 body.dark-mode main .container-fluid {
@@ -342,12 +409,25 @@ body.dark-mode .offcanvas .nav-link {
     color: #e9ecef !important;
 }
 
-body.dark-mode .offcanvas .nav-link:hover {
-    color: #0d6efd !important;
+body.dark-mode .offcanvas .nav-dropdown {
+    background-color: #212830 !important;
+    box-shadow: -14px 9px 36px -14px #000000;
+}
+
+body.dark-mode .offcanvas .nav-dropdown a {
+    color: #e9ecef !important;
+}
+
+body.dark-mode .offcanvas .nav-dropdown a:hover {
+    background: #2a313c !important;
 }
 
 body.dark-mode .offcanvas a {
     color: #eaeaea;
+}
+
+body.dark-mode .bx-chevron-down {
+    color: #e9ecef !important;
 }
 
 body.dark-mode #themeToggleBtn {
