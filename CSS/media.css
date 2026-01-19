@@ -1,6 +1,7 @@
 /* ===============================
    MOBILE ACCORDION DROPDOWN
 ================================ */
+
 @media (max-width: 991px) {
 
     /* Disable hover dropdown on mobile */
@@ -16,6 +17,10 @@
             2px 0 6px rgba(0, 0, 0, 0.15);
     }
 
+    .offcanvas .nav-link {
+        padding: 12px 8px !important;
+    }
+
     .offcanvas .nav-item.open .nav-link {
         justify-content: space-between;
         border-radius: 0;
@@ -27,6 +32,21 @@
     body.dark-mode .offcanvas .nav-item.open .nav-link {
         background-color: #212830 !important;
     }
+
+    /* ===============================
+        MENU DIVIDERS
+    ================================ */
+
+    .offcanvas .nav-item:not(:last-child) {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+    }
+
+    body:not(.dark-mode) .offcanvas .nav-item:not(:last-child) {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.08) !important;
+    }
+
+    /* ===============================
+        END MENU DIVIDERS*/
 
     .offcanvas .bx-chevron-down {
         transition: transform 0.3s ease;
