@@ -59,22 +59,13 @@ body::-webkit-scrollbar {
     justify-content: space-between;
 }
 
-.nav-item:hover .nav-link {
-    background: rgba(255, 255, 255, 0.15);
-}
-
 /* Arrow */
 .bx-chevron-down {
     margin-left: 4px;
     margin-top: 2px;
     font-size: 22px;
     /* transition: transform 0.2s ease; */
-    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, transform 0.2s ease !important;
-}
-
-/* Rotate arrow */
-.nav-item:hover .bx-chevron-down {
-    transform: rotate(180deg);
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, transform 0.25s ease !important;
 }
 
 /* Dropdown */
@@ -84,7 +75,7 @@ body::-webkit-scrollbar {
     left: 0;
     min-width: 220px;
     background-color: var(--main-bg-color) !important;
-    box-shadow: -14px 9px 36px -14px #97a9bb;
+    box-shadow: -14px 9px 36px -14px #000000;
     border-radius: 4px;
     opacity: 0;
     visibility: hidden;
@@ -302,10 +293,9 @@ footer {
     background-color: #f3f3f3 !important;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
-    will-change: transform;
+    /* will-change: transform; */
+    /* transform: translate3d(0, 0, 0); */
     transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease !important;
-    /* transition: transform 0.2s cubic-bezier(.4, 0, .2, 1) !important; */
-    /* Faster animation (100ms) */
 }
 
 .offcanvas-body {
@@ -427,7 +417,6 @@ body:not(.dark-mode) .offcanvas .nav-item.open .nav-link {
 
 body.dark-mode .offcanvas .nav-dropdown {
     background-color: #212830 !important;
-    /* box-shadow: -14px 9px 36px -14px #000000; */
 }
 
 /* ===============================
@@ -435,6 +424,11 @@ body.dark-mode .offcanvas .nav-dropdown {
 ================================ */
 .offcanvas .nav-dropdown {
     background: rgba(0, 0, 0, 0.12);
+    pointer-events: auto;
+}
+
+.offcanvas .nav-dropdown.animating {
+    pointer-events: none;
 }
 
 body:not(.dark-mode) .offcanvas .nav-dropdown {
