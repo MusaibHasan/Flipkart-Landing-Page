@@ -15,7 +15,7 @@
     <link rel="icon"
         href="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/logo_lite-cbb357.png"
         type="image/png">
-    <style>
+ <style>
         @media (min-width: 992px) {
             .nav-item a {
                 color: white !important;
@@ -23,6 +23,15 @@
 
             .bx-chevron-down {
                 color: white !important;
+            }
+
+            .nav-item:hover .nav-link {
+                background: rgba(255, 255, 255, 0.15);
+            }
+
+            /* Rotate arrow */
+            .nav-item:hover .bx-chevron-down {
+                transform: rotate(180deg);
             }
 
             body.dark-mode .navbar-nav,
@@ -879,6 +888,7 @@
 </body>
 
 </html>
+
 
 
 
