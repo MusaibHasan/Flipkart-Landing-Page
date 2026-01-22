@@ -32,8 +32,11 @@ document.querySelectorAll('.dropdown-toggle-mobile').forEach(toggle => {
         if (window.innerWidth >= 992) return; // desktop → ignore
 
         e.preventDefault();
-
         const navItem = this.closest('.nav-item');
+        const dropdown = navItem.querySelector('.nav-dropdown');
+
+        // Prevent taps during animation
+        dropdown.classList.add('animating');
 
         // Close other open accordions
         document.querySelectorAll('.nav-item.open').forEach(item => {
@@ -42,6 +45,11 @@ document.querySelectorAll('.dropdown-toggle-mobile').forEach(toggle => {
 
         // Toggle current
         navItem.classList.toggle('open');
+
+        // Remove lock after animation completes
+        setTimeout(() => {
+            dropdown.classList.remove('animating');
+        }, 260); // slightly > CSS transition duration
     });
 });
 
