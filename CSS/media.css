@@ -19,6 +19,8 @@
 
     .offcanvas .nav-link {
         padding: 12px 8px !important;
+        border-radius: 0;
+        transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease !important;
     }
 
     .offcanvas .nav-item.open .nav-link {
@@ -49,24 +51,26 @@
         END MENU DIVIDERS*/
 
     .offcanvas .bx-chevron-down {
-        transition: transform 0.3s ease;
+        transition: transform 0.25s ease;
+        transform: rotate(0deg);
     }
 
     /* Base dropdown (collapsed) */
     .offcanvas .nav-dropdown {
         background-color: #ffffff !important;
-        position: static;
-        opacity: 1;
-        visibility: visible;
-        transform: none;
+        position: static !important;
+        display: grid;
+        grid-template-rows: 0fr;
+        opacity: 1 !important;
+        visibility: visible !important;
+        transform: none !important;
         max-height: 0;
         overflow: hidden;
         box-shadow: none;
         border-radius: 0;
         border-bottom-left-radius: 10px;
         border-bottom-right-radius: 10px;
-        transform: translate3d(0, 0, 0);
-        /* transition: max-height 0.3s ease; */
+        transition: all 0.3s ease;
     }
 
     /* Expanded state */
@@ -83,6 +87,7 @@
     /* Better spacing */
     .offcanvas .nav-dropdown a {
         padding-left: 24px;
+        transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease !important;
     }
 }
 
