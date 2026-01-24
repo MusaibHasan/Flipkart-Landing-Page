@@ -19,6 +19,8 @@
 
     .offcanvas .nav-link {
         padding: 12px 8px !important;
+        color: #294563 !important;
+        font-weight: 500 !important;
         border-radius: 0;
         transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease !important;
     }
@@ -39,19 +41,19 @@
         MENU DIVIDERS
     ================================ */
 
-    .offcanvas .nav-item:not(:last-child) {
+    /* .offcanvas .nav-item:not(:last-child) {
         border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
     }
 
     body:not(.dark-mode) .offcanvas .nav-item:not(:last-child) {
         border-bottom: 1px solid rgba(0, 0, 0, 0.08) !important;
-    }
+    } */
 
     /* ===============================
         END MENU DIVIDERS*/
 
     .offcanvas .bx-chevron-down {
-        transition: transform 0.25s ease;
+        transition: transform 0.25s ease, color 0.3s ease, background-color 0.3s ease;
         transform: rotate(0deg);
     }
 
@@ -87,6 +89,8 @@
     /* Better spacing */
     .offcanvas .nav-dropdown a {
         padding-left: 24px;
+        color: #294563 !important;
+        font-weight: 500 !important;
         transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease !important;
     }
 }
