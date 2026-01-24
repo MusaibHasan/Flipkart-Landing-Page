@@ -64,8 +64,9 @@ body::-webkit-scrollbar {
     margin-left: 4px;
     margin-top: 2px;
     font-size: 22px;
-    /* transition: transform 0.2s ease; */
-    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, transform 0.25s ease !important;
+    will-change: transform;
+    transition: transform 220ms cubic-bezier(0.4, 0.0, 0.2, 1);
+    /* transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, transform 0.25s ease !important; */
 }
 
 /* Dropdown */
@@ -293,9 +294,20 @@ footer {
     background-color: #f3f3f3 !important;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
-    /* will-change: transform; */
-    /* transform: translate3d(0, 0, 0); */
+    will-change: transform;
     transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease !important;
+}
+
+.offcanvas-header {
+    border-bottom: 1px solid #e9ecef !important;
+    transition: border-color 0.3s ease, background-color 0.3s ease, color 0.3s ease !important;
+}
+
+.offcanvas-title {
+    font-family: 'Lato', serif;
+    font-weight: 600;
+    color: #294563 !important;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease !important;
 }
 
 .offcanvas-body {
@@ -307,6 +319,16 @@ footer {
     transition: opacity 0.2s ease-in-out !important;
 }
 
+#themeIcon {
+    color: #333;
+    transition: color 0.3s ease !important;
+}
+
+.btn-close {
+    /* filter: invert(0); */
+    transition: filter 0.3s ease !important;
+}
+
 /* Dark mode overrides */
 body.dark-mode {
     background-color: #121212;
@@ -314,11 +336,6 @@ body.dark-mode {
     color: #e0e0e0;
     /* main text color */
     transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-#themeIcon {
-    color: #333;
-    transition: color 0.3s ease !important;
 }
 
 /* Dark mode → Sun should be warm yellow */
@@ -342,14 +359,6 @@ body.dark-mode #searchBtn {
     color: #e9ecef !important;
     border-color: #697385 !important;
 }
-
-/* body.dark-mode .navbar-nav .nav-link {
-    color: #e9ecef !important;
-}
-
-body.dark-mode .navbar-nav .nav-link:hover {
-    color: #0d6efd !important;
-} */
 
 body.dark-mode .navbar-toggler {
     color: rgb(33 40 48) !important;
@@ -396,6 +405,14 @@ body.dark-mode .offcanvas {
     color: #e9ecef !important;
 }
 
+body.dark-mode .offcanvas-header {
+    border-bottom: 1px solid #444c58 !important;
+}
+
+body.dark-mode .offcanvas-title {
+    color: #e9ecef !important;
+}
+
 body.dark-mode .offcanvas-backdrop {
     background-color: rgba(0, 0, 0, 0.85);
 }
@@ -415,10 +432,6 @@ body:not(.dark-mode) .offcanvas .nav-item.open .nav-link {
     background: rgba(0, 0, 0, 0.05);
 }
 
-body.dark-mode .offcanvas .nav-dropdown {
-    background-color: #212830 !important;
-}
-
 /* ===============================
    INNER DROPDOWN CARD
 ================================ */
@@ -435,16 +448,16 @@ body:not(.dark-mode) .offcanvas .nav-dropdown {
     background: rgba(0, 0, 0, 0.04);
 }
 
+body.dark-mode .offcanvas .nav-dropdown {
+    background-color: #212830 !important;
+}
+
 body.dark-mode .offcanvas .nav-dropdown a {
     color: #e9ecef !important;
 }
 
 body.dark-mode .offcanvas .nav-dropdown a:hover {
-    background: #2a313c !important;
-}
-
-body.dark-mode .offcanvas a {
-    color: #eaeaea;
+    background-color: #212830 !important;
 }
 
 body.dark-mode .bx-chevron-down {
