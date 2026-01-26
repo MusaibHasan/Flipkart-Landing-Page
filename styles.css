@@ -235,16 +235,14 @@ main .container-fluid {
     position: absolute;
     z-index: -1;
     /* Middle layer (above spinner, behind text) */
-    inset: 1px;
-    /* Creates the 1px border width */
+    inset: 1.5px;
+    /* Adjusted width/height calculation: 1.5px * 2 sides = 3px */
     width: calc(100% - 3px);
     height: calc(100% - 3px);
 
     /* CRITICAL FIX: This was missing in your file! */
     background: var(--card-bg);
-
-    /* Radius Fix: Parent radius (16px) - Border width (8px) = 8px */
-    border-radius: 8px;
+    border-radius: 7px;
     transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
 }
 
