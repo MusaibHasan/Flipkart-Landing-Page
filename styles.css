@@ -58,7 +58,6 @@ body::-webkit-scrollbar {
 .nav-link {
     transition: background 0.2s ease;
     border-radius: 4px;
-    justify-content: space-between;
 }
 
 /* Arrow */
@@ -143,11 +142,11 @@ img {
     transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease !important;
 }
 
-#themeToggleBtn {
+.theme-btn {
     transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease !important;
 }
 
-#themeToggleBtn:focus {
+.theme-btn:focus {
     outline: 2px solid #f5c542;
     outline-offset: 2px;
 }
@@ -378,9 +377,8 @@ footer {
     transition: opacity 0.2s ease-in-out !important;
 }
 
-#themeIcon {
-    color: #333;
-    transition: color 0.3s ease !important;
+.theme-icon {
+    transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease !important;
 }
 
 .btn-close {
@@ -398,14 +396,15 @@ body.dark-mode {
 }
 
 /* Dark mode → Sun should be warm yellow */
-body.dark-mode #themeIcon {
+body.dark-mode .theme-icon {
     color: #f5c542 !important;
-    /* soft sun yellow */
+    /* Sun Yellow */
 }
 
 /* Light mode → Moon neutral */
-body:not(.dark-mode) #themeIcon {
+body:not(.dark-mode) .theme-icon {
     color: #333 !important;
+    /* Moon Black */
 }
 
 /* Optional: override Bootstrap elements */
@@ -510,9 +509,9 @@ body.dark-mode .offcanvas .nav-link {
     background: rgba(255, 255, 255, 0.08);
 }
 
-body:not(.dark-mode) .offcanvas .nav-item.open .nav-link {
+/* body:not(.dark-mode) .offcanvas .nav-item.open .nav-link {
     background: rgba(0, 0, 0, 0.05);
-}
+} */
 
 /* ===============================
    INNER DROPDOWN CARD
@@ -546,16 +545,16 @@ body.dark-mode .bx-chevron-down {
     color: #e9ecef !important;
 }
 
-body.dark-mode #themeToggleBtn {
+/* body.dark-mode .theme-btn {
     border: 1px solid #697385 !important;
-}
+} */
 
-body.dark-mode #themeToggleBtn::after {
+body.dark-mode .theme-btn::after {
     background-color: #f5c542 !important;
     color: #000;
 }
 
-body.dark-mode #themeToggleBtn,
+body.dark-mode .theme-btn,
 body.dark-mode .btn-close {
     /* border-color: #e9ecef !important;
     color: #e9ecef !important; */
