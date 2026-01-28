@@ -30,11 +30,12 @@
         border-radius: 0;
         border-top-left-radius: 10px !important;
         border-top-right-radius: 10px !important;
-        background-color: #ffffff !important;
+        background-color: #f3f3f3 !important;
+        transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease !important;
     }
 
     body.dark-mode .offcanvas .nav-item.open .nav-link {
-        background-color: #212830 !important;
+        background-color: #2a313c !important;
     }
 
     /* ===============================
@@ -57,28 +58,48 @@
         transform: rotate(0deg);
     }
 
-    /* Base dropdown (collapsed) */
+    /* Base dropdown (collapsed) - UPDATED FOR TREE VIEW */
     .offcanvas .nav-dropdown {
-        background-color: #ffffff !important;
+        background-color: transparent !important;
+        /* Removes the solid white box */
         position: static !important;
         display: grid;
         grid-template-rows: 0fr;
         opacity: 1 !important;
         visibility: visible !important;
         transform: none !important;
-        max-height: 0;
-        overflow: hidden;
         box-shadow: none;
+        /* Tree View Styling */
         border-radius: 0;
-        border-bottom-left-radius: 10px;
-        border-bottom-right-radius: 10px;
-        transition: all 0.3s ease;
+        border-left: 2px solid rgba(0, 0, 0, 0.1);
+        /* The hierarchy line */
+        margin-left: 24px;
+        /* Indent the whole block */
+        margin-top: 0;
+        margin-bottom: 0;
+        transition: grid-template-rows 0.35s ease-out;
+        /* Use ease-out for that "settle" feel */
+    }
+
+    /* Dark Mode Line Adjustment */
+    body.dark-mode .offcanvas .nav-dropdown {
+        border-left: 2px solid rgba(255, 255, 255, 0.1);
+        background-color: transparent !important;
+    }
+
+    /* THE NEW INNER WRAPPER */
+    /* This is required for the grid animation to work on the content */
+    .offcanvas .nav-dropdown .dropdown-inner {
+        overflow: hidden;
+        min-height: 0;
+        /* Critical for grid to calculate 0 height correctly */
     }
 
     /* Expanded state */
     .offcanvas .nav-item.open .nav-dropdown {
-        max-height: 500px;
-        /* enough for links */
+        grid-template-rows: 1fr;
+        /* Triggers your grid animation */
+        margin-bottom: 10px;
     }
 
     /* Arrow rotation on open */
@@ -86,12 +107,25 @@
         transform: rotate(180deg);
     }
 
-    /* Better spacing */
+    /* Better spacing for Tree Links */
     .offcanvas .nav-dropdown a {
-        padding-left: 24px;
+        padding: 10px 15px;
+        /* Tighter padding for list items */
+        padding-left: 20px;
         color: #294563 !important;
         font-weight: 500 !important;
-        transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease !important;
+        transition: color 0.3s ease, background-color 0.3s ease !important;
+    }
+
+    /* Dark Mode Text */
+    body.dark-mode .offcanvas .nav-dropdown a {
+        color: #b0b8c1 !important;
+    }
+
+    body.dark-mode .offcanvas .nav-dropdown a:hover {
+        color: #fff !important;
+        background: transparent !important;
+        /* No background on hover, just text brightens */
     }
 }
 
