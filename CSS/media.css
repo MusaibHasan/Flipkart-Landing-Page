@@ -77,7 +77,7 @@
         /* Indent the whole block */
         margin-top: 0;
         margin-bottom: 0;
-        transition: grid-template-rows 0.35s ease-out;
+        transition: grid-template-rows 0.35s ease-out, border-color 0.3s ease, background-color 0.3s ease !important;
         /* Use ease-out for that "settle" feel */
     }
 
