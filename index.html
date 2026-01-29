@@ -8,8 +8,11 @@
     </title>
     <link rel="stylesheet" href="/Flipkart-Landing-Page/styles.css">
     <link rel="stylesheet" href="/Flipkart-Landing-Page/CSS/media.css">
-    <link href='https://cdn.boxicons.com/3.0.6/fonts/basic/boxicons.min.css' rel='stylesheet'>
-    <link href='https://cdn.boxicons.com/3.0.6/fonts/brands/boxicons-brands.min.css' rel='stylesheet'>
+    <!-- Boxicons CSS -->
+    <link href='https://cdn.boxicons.com/3.0.8/fonts/basic/boxicons.min.css' rel='stylesheet'>
+    <link href='https://cdn.boxicons.com/3.0.8/fonts/filled/boxicons-filled.min.css' rel='stylesheet'>
+    <link href='https://cdn.boxicons.com/3.0.8/fonts/brands/boxicons-brands.min.css' rel='stylesheet'>
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.4/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-DQvkBjpPgn7RC31MCQoOeC9TI2kdqa4+BSgNMNj8v77fdC77Kj5zpWFTJaaAoMbC" crossorigin="anonymous">
     <link rel="icon"
@@ -85,44 +88,77 @@
                 aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header">
                     <h6 class="offcanvas-title" id="offcanvasNavbarLabel">Welcome!</h6>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+
+                    <div class="d-flex align-items-center ms-auto gap-2">
+                        <!-- Dark/Light Mode Toggle -->
+                        <button id="themeToggleBtnMobile" type="button"
+                            class="theme-btn btn btn-outline-dark border-0 d-lg-none" aria-label="Toggle theme"
+                            aria-pressed="false">
+                            <span class="theme-icon">🌙</span>
+                        </button>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
                 </div>
                 <div class="offcanvas-body">
                     <ul class="navbar-nav justify-content-end flex-grow-1 column-gap-3 pe-lg-5">
                         <li class="nav-item d-inline-block position-relative">
-                            <a class="nav-link d-flex align-items-center position-relative"
-                                href="https://corporate.flipkart.net/corporate-home">Home
-                                <i class='bx bx-chevron-down'></i>
-                            </a>
-                        </li>
-                        <li class="nav-item d-inline-block position-relative">
-                            <a class="nav-link d-flex align-items-center position-relative dropdown-toggle-mobile"
-                                href="" role="button">About
+                            <a class="nav-link d-flex align-items-center justify-content-between position-relative dropdown-toggle-mobile"
+                                href="" role="button"><span class="d-flex align-items-center"><i
+                                        class='bx bx-info-circle me-2'></i> About</span>
                                 <i class='bx bx-chevron-down'></i>
                             </a>
                             <div class="nav-dropdown">
-                                <a href="https://corporate.flipkart.net/corporate-home">About Us</a>
-                                <a href="https://www.flipkart.com/helpcentre?otracker=footer_navlinks">Contact Us</a>
-                                <a href="https://stories.flipkart.com/?otracker=footer_navlinks">Our Story</a>
-                                <a
-                                    href="https://flipkart.turbohire.co/careerpage/4d757ba0-3d57-448a-b82c-238ed87ac90f">Careers</a>
-                                <a href="https://www.flipkart.com/corporate-information">Corporate Information</a>
+                                <div class="dropdown-inner">
+                                    <a href="https://corporate.flipkart.net/corporate-home">About Us</a>
+                                    <a href="https://www.flipkart.com/helpcentre?otracker=footer_navlinks">Contact
+                                        Us</a>
+                                    <a href="https://stories.flipkart.com/?otracker=footer_navlinks">Our Story</a>
+                                    <a
+                                        href="https://flipkart.turbohire.co/careerpage/4d757ba0-3d57-448a-b82c-238ed87ac90f">Careers</a>
+                                    <a href="https://www.flipkart.com/corporate-information">Corporate Information</a>
+                                </div>
                             </div>
                         </li>
                         <li class="nav-item d-inline-block position-relative">
-                            <a class="nav-link d-flex align-items-center position-relative dropdown-toggle-mobile"
-                                href="" role="button">More
+                            <a class="nav-link d-flex align-items-center justify-content-between position-relative dropdown-toggle-mobile"
+                                href="" role="button">
+                                <span class="d-flex align-items-center"><i class='bx bx-help-circle me-2'></i>
+                                    Help</span>
                                 <i class='bx bx-chevron-down'></i>
                             </a>
                             <div class="nav-dropdown">
-                                <a href="https://www.flipkart.com/communication-preferences/push?t=all">Notification
-                                    Preferences</a>
-                                <a href="https://seller.flipkart.com/sell-online">Sell on Flipkart</a>
-                                <a href="https://www.flipkart.com/helpcentre">24x7 Customer Care</a>
-                                <a
-                                    href="https://advertising.flipkart.com/login?returl=/?otracker=ch_vn_advertise_header">Advertise</a>
-                                <a href="https://www.flipkart.com/mobile-apps?otracker=ch_vn_mobile_apps">Download
-                                    App</a>
+                                <div class="dropdown-inner">
+                                    <a href="https://www.flipkart.com/helpcentre?otracker=footer_navlinks">Customer
+                                        Care</a>
+                                    <a
+                                        href="https://www.flipkart.com/helpcentre?catalog=5e5cf25d5100003b003313c8&view=CATALOG">Returns
+                                        & Pickup</a>
+                                    <a
+                                        href="https://www.flipkart.com/helpcentre?catalog=55c9bc6bb000003f002c16ff&view=CATALOG">Delivery</a>
+                                    <a href="https://www.flipkart.com/account/orders?link=home_orders">Track
+                                        Orders</a>
+                                    <a
+                                        href="https://www.flipkart.com/helpcentre?catalog=55c9c8e2b0000023002c1702&view=CATALOG">FAQ</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item d-inline-block position-relative">
+                            <a class="nav-link d-flex align-items-center justify-content-between position-relative dropdown-toggle-mobile"
+                                href="" role="button"><span class="d-flex align-items-center"><i
+                                        class='bx bx-grid me-2'></i> More</span>
+                                <i class='bx bx-chevron-down'></i>
+                            </a>
+                            <div class="nav-dropdown">
+                                <div class="dropdown-inner">
+                                    <a href="https://www.flipkart.com/viewcart?marketplace=FLIPKART">My Cart</a>
+                                    <a href="https://www.flipkart.com/communication-preferences/push?t=all">Notification
+                                        Preferences</a>
+                                    <a href="https://seller.flipkart.com/sell-online">Sell on Flipkart</a>
+                                    <a
+                                        href="https://advertising.flipkart.com/login?returl=/?otracker=ch_vn_advertise_header">Advertise</a>
+                                    <a href="https://www.flipkart.com/mobile-apps?otracker=ch_vn_mobile_apps">Download
+                                        App</a>
+                                </div>
                             </div>
                         </li>
                     </ul>
@@ -131,10 +167,10 @@
                             placeholder="Search for Products, Brands and More" aria-label="Search">
                         <button id="searchBtn" class="btn btn-outline-primary text-bg-primary border border-white px-3"
                             type="submit">Search</button>
-                        <!-- Dark/Light Mode Toggle -->
-                        <button id="themeToggleBtn" type="button" class="btn btn-outline-dark ms-1"
+                        <button id="themeToggleBtnDesktop" type="button"
+                            class="theme-btn btn btn-outline-dark border-0 d-none d-lg-block ms-2"
                             aria-label="Toggle theme" aria-pressed="false">
-                            <span id="themeIcon">🌙</span>
+                            <span class="theme-icon">🌙</span>
                         </button>
                     </form>
                 </div>
